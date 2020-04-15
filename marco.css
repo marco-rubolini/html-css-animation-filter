@@ -65,3 +65,45 @@
     border-radius: 30px;
     filter: invert(.1) brightness(.8);
 }
+
+.ex-9-img {
+    transition: 3s;
+}
+
+.ex-9-img:hover {
+    border-radius: 30px;
+    filter: saturate(.1) sepia(.8);
+    transform: scale(1.2);
+}
+
+.ex-10-icon {
+    animation: caricamento 1s linear infinite;
+}
+
+@keyframes caricamento {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: giro-orario 1s linear;
+}
+
+@keyframes giro-orario {
+    0% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(320deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
